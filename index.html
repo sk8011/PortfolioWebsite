@@ -4,24 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio Website</title>
-    <?php include 'head.php'; ?>
+    <link rel="icon" href="./images.png" type="image/png">
     <style>
-        header ul{
-            padding: 10px;
+        header{
+            position:fixed; 
+            z-index: 0;
+            width: 100%; 
+            top:0px; 
+            margin: 0px;
             background-color: chartreuse;
+            left: 0px;
         }
         ul li{
             display: inline-block;
             margin-right: 20px;
+            margin-left: 0px;
         }
         ul li a{
             text-decoration:solid;
             font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
+        #img{
+            height:150px;
+            width:150px;
+            border: 5px solid green;
+            border-radius: 50%;
+        }
+        img{
+            width: 150px;
+            border-radius: 50%;
+            z-index: -1;
+        }
+        body{
+            background-color: black;
+            width:100%;
+            height:100%;
+            color: green;
+            background-repeat: no-repeat;
+            background-size: cover;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+        #about{
+            width: 100%;
+            display: inline-block;
+            position: relative;
+        }
+        h2{
+            width:190px;
+            margin-right: 15px;
+        }
     </style>
 </head>
 <body>
-    <header style="position:relative;">
+    <header>
         <ul>
             <li><a href="./Resume.html">Resume</a></li>
             <li><a href="#">Contact Me</a></li>
@@ -29,11 +65,19 @@
             <li><a href="">More About Me</a></li>
         </ul>
     </header>
-    <h1 align="center" style="font-family: fantasy;">Welcome to my Portfolio Website </h1>
+    <h1 align="center" style="font-family: fantasy; margin-top: 65px; font-weight: 200;">Welcome to my Portfolio Website </h1>
     <hr>
-    <p><img src="./1698130425047.jpg" style="display:flexbox; width: 100px; height: 80px; object-fit: cover; float:inline-start; padding-right: 65px; background-image:url('angle-circle-arrow-right-icon.png');background-size: contain;" /><br>I'm Saurav Kumar and this is my first Portfolio Website.<br>(all kinda feedback would be appreciated.)</p>
+    <div style="position: relative; height:150px;">
+        <div id="img"><img src="./assets/1698130425047.jpg" /></div>
+        <div style="position: absolute; top:40%; left:180px;">
+            I'm Saurav Kumar and this is my first Portfolio Website.<br>(all kinda feedback would be appreciated.)
+        </div>
+    </div>
     <br>
-    <div style="display: flex; align-items:center;"><h2 style="margin-right: 15px; align-self: center;">About Me</h2><t>Hey there, this is Saurav. I'm 20 yrs old as of 2024 and am in my 5th semester of B.Tech. My college is Indian Institute of Information Technology, Sonepat and my specialisation is IT. My hobbies include reading books, writing stories, playing football and Coding. Other than that, I'm always very enthusiastic to learn about new tech from my colleagues and tech experts.</t></div>
+    <div id="about">
+        <h2 style="position:absolute; color: lightcoral; left: 5px;">About Me</h2>
+        <t style="position: absolute; left: 10%; top: 5px; right: 7px;">Hey there, this is Saurav. I'm 20 yrs old as of 2024 and am in my 5th semester of B.Tech. My college is Indian Institute of Information Technology, Sonepat and my specialisation is IT. My hobbies include reading books, writing stories, playing football and Coding. Other than that, I'm always very enthusiastic to learn about new tech from my colleagues and tech experts.</t>
+    </div>
     
 </body>
 </html>
