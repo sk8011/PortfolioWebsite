@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
-    <link rel="icon" href="./assets/icon.png" type="image/png">
     <style>
         dd{
             margin-left: 6px;
@@ -24,29 +23,58 @@
         .Godown dt{
             margin-bottom: 4px;
         }
+        .container {
+            display: flex;
+            flex-direction: column;
+            width:100%;
+        }
+        #item1 {
+            align-self: center; 
+            display:flex; 
+            align-items: center; 
+            flex-direction: column;
+        }
+        #item2 {
+            align-self: center; 
+            margin-top: 6vh; 
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #item2>a {
+            text-decoration:none;
+            background-color: cyan;
+            padding: 5px;
+        }
     </style>
 </head>
 <body>
-    <div style="text-align: center;">
+<div class="container">
+    <div id="item1">
         <h1>Saurav Kumar</h1>
         <p>Lucknow, Uttar Pradesh, India &diams; <a href="mailto:it12212031@gmail.com">it12212031@gmail.com</a> &diams; <a href="tel:+919696465635"><strong>+91 96964 65635</strong></a></p>
         <p><a href="https://www.linkedin.com/in/saurav-kumar-336b4922b/">LINKEDIN</a> &diams; <a href="https://www.codechef.com/users/sauravkv2512">CODECHEF</a> &diams; <a href="https://github.com/sk8011">GITHUB</a> &diams; <a href="https://leetcode.com/u/sauravkvrdsoviiib2512/">LEETCODE</a> &diams; <a href="https://www.kaggle.com/sauravkr2512">KAGGLE</a></p>
     </div>
-    <h2>EDUCATION</h2><hr /><br>
+    <div>
+        <h2>EDUCATION</h2><hr /><br>
     <strong style="font-size: medium;">Bachelor's from IIIT Sonepat</strong>
         <dd>&bull; Specialisation in Information Technology<div style="float: right;">CGPA: 8.44 (upto 4th sem)</div></dd>
         <dd>&bull; 2022-2026</dd><br>
     <strong style="font-size: medium;">Pre-secondary & Intermediate Education from Kendriya Vidyalaya, RDSO, Lucknow</strong>
         <dd>&bull; Intermediate: 2020-2022<div style="float: right;">Perc: 95.4%</div></dd>
         <dd>&bull; Pre-Secondary: 2010-2020<div style="float: right;">Perc: 89.6%</div></dd>
-    <h2>SKILLS</h2>
+    </div>
+    
+    <div>
+        <h2>SKILLS</h2>
     <hr />
     <dl>
         <dt>&bull; <strong>TECHNICAL SKILLS</strong><br><t> &DoubleRightArrow; C++, Python, HTML, CSS, JavaScript, MySQL<br>&DoubleRightArrow; Machine Learning(Pandas, Scikit-learn, NumPy, MatplotLib), Web development<br> &DoubleRightArrow; Skillfull with Microsoft PPT, Excel, Word as well as Adobe Animate and Photoshop</t></dt>
         <dt>&bull; <strong>SOFT SKILLS</strong><t> &DoubleRightArrow; Creative Writing, Communication, Teamwork and Collaboration</t></dt>
         <dt>&bull; <strong>COURSE WORK</strong><t> &DoubleRightArrow; DSA using C++, Cloud Computing, Operating Systems, Database Management using MySQl, Computer Networks</t></dt>
     </dl>
-    <h2>ACHIEVEMENTS</h2><hr />
+    </div>
+    
+    <div>
+        <h2>ACHIEVEMENTS</h2><hr />
     <dl class="Godown">
         <dt>&bull; Completed 50+ questions of DSA on CodeChef.</dt>
         <dt>&bull; I've completed Andrew Ng Course on Machine Learning and have made a bunch of ML projects using models such as RandomForest, LinearRegression, etc.</dt>
@@ -54,10 +82,16 @@
         <dt>&bull; I once made a python based project for Image Organization which used libraries such as Kivy, Pillow, PyFPDF and Shutil.</dt>
         <dt>&bull; Have made a bunch of basic Web Development Projects.</dt>
     </dl>
-    <h2>CAREER OBJECTIVES</h2><hr />
-    <p>I am eager to apply my academic knowledge and passion for technology in a practical, real-world setting. Having completed courses in machine learning and web development, I am particularly interested in opportunities that allow me to enhance my skills in these areas. Seeking an internship where I can contribute to innovative projects, leverage my strong foundation in IT principles, and support organizational goals while gaining valuable industry experience in machine learning and web development.</p>
-    <div style="text-align: center; margin-top: 19px; font-family: 'Courier New', Courier, monospace;">    
-        &DoubleRightArrow;<a href="./index.html" style="text-decoration:none; padding: 3px; background-color: cyan;">Visit My Portfolio Website</a>&DoubleLeftArrow;
     </div>
+    
+    <div>
+        <h2>CAREER OBJECTIVES</h2><hr />
+    <p>I am eager to apply my academic knowledge and passion for technology in a practical, real-world setting. Having completed courses in machine learning and web development, I am particularly interested in opportunities that allow me to enhance my skills in these areas. Seeking an internship where I can contribute to innovative projects, leverage my strong foundation in IT principles, and support organizational goals while gaining valuable industry experience in machine learning and web development.</p>
+    </div>
+    
+    <div id="item2">    
+        &DoubleRightArrow;<a href="./index.html">Visit My Portfolio Website</a>&DoubleLeftArrow;
+    </div>
+</div>
 </body>
 </html>
